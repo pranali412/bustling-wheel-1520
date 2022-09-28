@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sighup and Login Page</title>
+  <link rel="stylesheet" href="loginPage.css" />
+  <link
+  href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Quicksand&family=Ubuntu:wght@500&display=swap"
+  rel="stylesheet">
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div id="mainLoginPage" style="display:block;">
+    <div class="subLoginPage">
+      <div class="close">
+       <a href="../Landing page/index.html"> <i class="fa fa-window-close" aria-hidden="true"></i></a>
+      </div>
+      <div id="loginbox">
+        <div class="boxtop">
+          <p class="loginsign">Login/Sign Up Using Phone</p>
+        </div>
+        <!-- login input box -->
+        <div class="loginput">
+          <h4 class="contrycode">+91</h4>
+          <input type="text" maxlength="1" class="loginput1" id="input1"
+            onkeyup="move(event, '', 'input1', 'input2',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input2"
+            onkeyup="move(event, 'input1', 'input2', 'input3',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input3"
+            onkeyup="move(event, 'input2', 'input3', 'input4',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input4"
+            onkeyup="move(event, 'input3', 'input4', 'input5',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input5"
+            onkeyup="move(event, 'input4', 'input5', 'input6',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input6"
+            onkeyup="move(event, 'input5', 'input6', 'input7',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input7"
+            onkeyup="move(event, 'input6', 'input7', 'input8',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input8"
+            onkeyup="move(event, 'input7', 'input8', 'input9',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input9"
+            onkeyup="move(event, 'input8', 'input9', 'input10',)" />
+          <input type="text" maxlength="1" class="loginput1" id="input10"
+            onkeyup="move(event, 'input9', 'input10', '',)" />
+            <hr>
+            <!-- <div id="logcontent">
+              
+                <p>
+                  Registering for this site allows you to access your order status and history. Just fill in the above fields, and we'll get a new account set up for you in no time. We will only ask you for information necessary to make the purchase process faster and easier.
+                </p>
+              
+              <div id="smll">
+                <small class="smll">
+                  By Signing up or logging in, you agree to our. <a href="#">Terms and Conditions</p></a>
+                </small>
+              </div>
+            </div> -->
+          <button id="requestptp " onclick="OTP()">Request OTP</button>
+        </div>
+        <p style="font-size:small; text-align:center">
+          Registering for this site allows you to access your order status and history. Just fill in the above fields,<br> and we'll get a new account set up for you in no time. We will only ask you for information necessary <br> to make the purchase process faster and easier.
+        </p>
+        <!-- input box end  -->
+        <div class="hrline"></div>
+        <!-- OTP Section Area -->
+        <div id="otpsection">
+          <p>Enter the 4 digit OTP received on your phone.</p>
+          <div class="otpbox">
+            <input type="text" class="enterotp enterotp1" id="text1" maxlength="1"
+              onkeyup="move(event , '', 'text1', 'text2',)" />
+            <input type="text" class="enterotp enterotp2" id="text2" maxlength="1"
+              onkeyup="move(event , 'text1', 'text2', 'text3',)" />
+            <input type="text" class="enterotp enterotp3" id="text3" maxlength="1"
+              onkeyup="move(event , 'text2', 'text3', 'text4',)" />
+            <input type="text" class="enterotp enterotp4" id="text4" maxlength="1"
+              onkeyup="move(event , 'text3', 'text4', '',)" />
+            <div>
+              <button id="verify" onclick="Verify()">Verify OTP</button>
+              <button id="ragister" ><a href="./RegisterPage.html"> Create Account</a></button>
+              <span id="incorrect"></span>
+            </div>
+            <!-- OTP Section Close -->
+            <div class="whats">
+              <input type="checkbox" />
+              <p>Get Important Updates on Whatsapp. <a href="#">Terms and Conditions</p></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+  </div>
+</body>
+<script src="loginPage.js"></script>
+
+</html>
