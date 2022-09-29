@@ -2,6 +2,8 @@ body {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family:'poppins', sans_serif;
+    width:100vw;
 }
 
 #carousel {
@@ -100,11 +102,19 @@ h2 {
 #lastbox button {
     background-color: black;
     color: white;
+
+    height: 33px;
+    margin-left:-4px;
+
+}
+
+#lastbox input {
     height: 30px;
 
 }
 
 input {
+
     width: 500px;
     height: 30px
 }
@@ -131,7 +141,16 @@ input {
     cursor: pointer;
     margin: auto;
     justify-content: space-evenly;
+
+
+   
 }
+.fourth_box{
+    background-color: #6610f2,  #0d6efd;;
+}
+
+}
+
 
 .fourth_box_slide_div:hover .left,
 .right {
@@ -151,6 +170,9 @@ input {
     width: 90%;
     flex-wrap: wrap;
     overflow: hidden;
+
+    background-color:white;
+
 }
 
 .idiv {
@@ -281,3 +303,4 @@ input {
     margin: auto;
     text-align: center;
 }
+
