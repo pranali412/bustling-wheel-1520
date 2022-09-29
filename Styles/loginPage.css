@@ -1,36 +1,25 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    font-family: Quicksand;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
   body{
     background-color: black;
-    /* background-image: url(authSIe2.jpg); */ 
-    /* width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
-  }
-  #mainLoginPage{
-     position: relative;
-     /* left: 18%;  */
      width: fit-content;
     animation: right 2s;
   } 
   
   .subLoginPage {
-    border: 1px solid royalblue;
     background-image: url("https://media.sugarcosmetics.com/upload/authSIe2.jpg");
     height: 92vh;
     width: 40%;
     background-position: 100%;
     background-size: cover;
-    /* padding: 25px; */
-    /* background-color: aqua; */
-    /* margin-left: 100%;  */
-    /* display: flex; */
   }
   .close {
     margin-left: 580px;
+    font-size: xx-large;
     color: white;
     cursor: pointer;
   }
@@ -42,12 +31,9 @@
   }
   #loginbox {
     width: 800px;
-    height: 92vh;
+    height: 88vh;
     background-image: url("https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png");
-    /* margin-top: 25px; */
     margin-left: 600px;
-    /* box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px; */
-    /* display: flex; */
   }
   .boxtop {
     padding-top: 20px;
@@ -67,11 +53,8 @@
     margin-top: 2px;
   }
   
-  /* input box start */
-  
   .loginput {
     margin-left: 30px;
-    /* border: 1px solid lightseagreen; */
     width: 565px;
     height: 45px;
     display: flex;
@@ -104,7 +87,6 @@
     background-color: beige;
     border-radius: 10px;
   }
-  /* input box end */
   
   .hrline {
     border: 0.3px solid gray;
@@ -113,8 +95,6 @@
     width: 95%;
     margin-left: 10px;
   }
-  
-  /* OTP Section Area */
   
   #otpsection {
     margin-left: 30px;
@@ -159,14 +139,9 @@
   }
   #logcontent {
     margin: 0%;
-    /* margin-top: 25px; */
-    /* border: 1px solid hotpink; */
-    /* width: 100%;
-    height: 300px; */
   }
   .logp {
     margin: auto;
-    /* border: 1px solid darkblue; */
     width: -36px;
     font-size: 15px;
     padding: 25px;

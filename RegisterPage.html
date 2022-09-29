@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="./Styles/RegisterPage.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Nunito:ital,wght@0,300;0,400;1,300;1,400&family=Plus+Jakarta+Sans:wght@400;600&family=Poppins:wght@200;300;400;500&family=Quicksand&family=Ubuntu:wght@500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div id="MainRegisterPage" style="display: block;">
+        <div id="subRegisterPage">
+            <div id="close" onclick="closed ()">
+                <a href="../Landing page/index.html"><i class="fa-solid fa-xmark"></i></a>
+            </div>
+            <a href="https://www.pngpix.com/wp-content/uploads/2016/10/PNGPIX-COM-Arrow-PNG-Image-4.png"></a>
+            <div id="Registerbox">
+                <div class="boxtop">
+                    <!-- <p class="detail">Hi!</p> -->
+                </div>
+                <form action="./myaction.js" name="myForm" onsubmit="return validateform()" method="post">
+                    <div id="infoinput">
+                        <h2>Please fill this form below</h2>
+                        <div class="infoname" id="First-Name">
+                            <input type="text" maxlength="9" placeholder="First-Name" class="formerror" required>
+                        </div>
+                        <div class="infoname" id="Middle-Name">
+                            <input type="text" maxlength="9" placeholder="Last-Name" class="formerror" required>
+                        </div>
+                        <div id="infoemail" id="Middle-Name">
+                            <input type="email" placeholder="Enter Email">
+                        </div>
+                    </div>
+                    <div id="savebtn" style="margin-bottom: 0%;" onclick="succeful ()">SIGN UP ME</div>
+                    <hr><h3 style="margin-left: 45%;">OR</h3>
+                    <div id="fbicon">
+                        <div>
+                            <a href="#" class="LoginWithEmail"> <img
+                                    src="https://media.sugarcosmetics.com/upload/Frame%20892.png" width="158px"
+                                    height="40px"></a>
+                        </div>
+                        <div id="logcontent">
+
+                        </div>
+                    </div>
+                    <div id="small">
+                        <small class="small" style="margin-left: 20%; margin-bottom: 30%;">By Signing up or logging in, you agree to our.<a href="#">Terms and
+                                Conditions</small></a>
+                    </div>
+                    </div>
+                </form>
+            
+
+        </div>
+        <div id="container" style="display: none" ;>
+            <h1> hi Congratulation, Your Account is created successful <button class="ok" onclick="okay ()">Ok</button>
+            </h1>
+        </div>
+</body>
+<script src="./Scripts/RegisterPage.js"></script>
+
+</html>
