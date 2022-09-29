@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins',sans-serif;
+   
+}
+
+ body{
+    background-color: #f5f5f5;
+ }
+
+  #container{
+    margin: auto;
+  }
+
+ #top{
+    width: 100%;
+    height: 350px;
+    margin-top: 15px;
+    background-color: #fff;
+ }
+
+ #top>img{
+    width: 90%;
+    height: 300px;
+    border-radius: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#top>a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black;
+}
+
+#main{
+    display: flex;
+    /* align-items: center; */
+    gap: 20px;
+    width: 100%;
+    padding-left:3% ;
+    padding-right: 4%;
+    margin-top: 20px;
+}
+
+#side_bar{
+    width: 23%;
+    cursor: pointer;
+}
+
+.item{
+    width: auto;
+    padding: 18px;
+    border-radius: 10px;
+    position: relative;
+    background-color:#fff ;
+}
+
+.item i{
+    margin-right: 15px;
+}
+
+p{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+span{
+    font-size: 16px;
+    font-weight: 500;
+
+}
+
+.item h3 .dropdown{
+    position: absolute;
+    right: 0;
+    transition: 0.3s ease;
+ }
+
+#side_bar .item .sub_menu{
+   display: none;
+}
+
+.rotate{
+    transform: rotate(180deg);
+}
+
+#right_side{
+    /* border: 1px solid red; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: auto;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+#p-div{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    line-height: 20px;
+    background-color: #fff;
+}
+
+h4{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+#p-div>img{
+    margin: auto;
+    width: 100%;
+}
+
+#p-div>p{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+}
+
+#p-div>button{
+    align-items: center;
+    padding: 8px 30px;
+    color: #fff;
+    background-color: black;
+    border-radius: 10px;
+    position :relative;
+    top : 0rem;
+    bottom: 0rem;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#bottom-heding{
+    /* border: 1px solid; */
+    padding: 18px;
+    background-color: #fff;
+    padding-left: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#bottom{
+    margin-top: 30px;
+    border: px solid;
+    text-align: center;
+    line-height: 30px;
+}
+
+input{
+    width: 40%;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: 1px solid;
+}
+
+#bottom>button{
+    width: 8%;
+    font-size: 16px;
+    padding: 9px;
+    margin-left: -5px;
+    color: #fff;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    cursor: pointer;
+
+}
+
+
+
+
+
