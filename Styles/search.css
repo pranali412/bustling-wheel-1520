@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+#body{
+    display: flex;
+    width: 95%;
+    margin: 2rem auto;
+}
+#relevence{
+    flex: 1;
+    border: 1px solid red;
+    height: 30vh;
+}
+#relevence div{
+    border: 1px solid teal;
+    display: flex;
+    align-items: center;
+}
+#options{
+    display: flex;
+    flex-direction: column;
+}
+#container {
+    flex: 3;
+    border: 1px solid green;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+}
+.child{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100%;
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.child img{
+    width: 80%;
+    margin: auto;
+}
+.child p{
+    margin: 1rem;
+}
+.child button{
+    margin: 1rem auto;
+    width: 60%;
+    padding: 8px 15px;
+    background: #000;
+    color: white;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 490px) {
+    .child img{
+        width: 70%;
+    }
+    #container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

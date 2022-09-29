@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Searched Items</title>
+    <link rel="stylesheet" href="./Styles/search.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+</head>
+<body>
+    <div id="navbar"></div>
+    <div id="body">
+        <div id="relevence">
+            <div>
+                <h3>Sort By:</h3>
+                <p>Relevence<i class="fa fa-caret-down"></i></p>
+                
+            </div>
+            <div id="options">
+                <p onclick="lowtohigh()">Price: Low To High</p>
+                <p onclick="hightolow()">Price: High To Low</p>
+            </div>
+        </div>
+        <div id="container"></div>
+    </div>
+</body>
+</html>
+<script src="./Scripts/search.js"></script>
