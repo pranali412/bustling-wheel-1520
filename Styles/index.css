@@ -102,12 +102,19 @@ h2 {
 #lastbox button {
     background-color: black;
     color: white;
+
     height: 33px;
     margin-left:-4px;
 
 }
 
 #lastbox input {
+    height: 30px;
+
+}
+
+input {
+
     width: 500px;
     height: 30px
 }
@@ -135,11 +142,16 @@ h2 {
     margin: auto;
     justify-content: space-evenly;
 
+
    
 }
 .fourth_box{
     background-color: #6610f2,  #0d6efd;;
 }
+
+}
+
+
 .fourth_box_slide_div:hover .left,
 .right {
     visibility: visible;
@@ -158,7 +170,9 @@ h2 {
     width: 90%;
     flex-wrap: wrap;
     overflow: hidden;
+
     background-color:white;
+
 }
 
 .idiv {
@@ -289,6 +303,4 @@ h2 {
     margin: auto;
     text-align: center;
 }
-
-
 

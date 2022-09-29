@@ -1,0 +1,156 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'poppins',sans-serif;
+}
+  body{
+    background-color: black;
+     width: fit-content;
+    animation: right 2s;
+  } 
+  
+  .subLoginPage {
+    background-image: url("https://media.sugarcosmetics.com/upload/authSIe2.jpg");
+    height: 92vh;
+    width: 40%;
+    background-position: 100%;
+    background-size: cover;
+  }
+  .close {
+    margin-left: 580px;
+    font-size: xx-large;
+    color: white;
+    cursor: pointer;
+  }
+  #headlog {
+    font-size: 24px;
+    color: white;
+    font-weight: 800;
+    cursor: pointer;
+  }
+  #loginbox {
+    width: 800px;
+    height: 88vh;
+    background-image: url("https://media.sugarcosmetics.com/upload/loginPageBackGroundTexture.png");
+    margin-left: 600px;
+  }
+  .boxtop {
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-left: 30px;
+  }
+  .loginsign {
+    text-align: center;
+    align-items: center;
+    font-size: 24px;
+  }
+  .logmob {
+    margin-top: 2px;
+  }
+  
+  .loginput {
+    margin-left: 30px;
+    width: 565px;
+    height: 45px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    align-items: center;
+  }
+  .contrycode {
+    font-size: calc(1.275rem + 0.3vw);
+    text-align: center;
+  }
+  
+  .loginput1 {
+    width: 28px;
+    text-align: center;
+    border-top: none;
+    border-right: none;
+    border-bottom: 1px solid rgb(160, 160, 163);
+    border-left: none;
+    border-image: initial;
+    margin: 3px;
+    font-weight: 600;
+    font-size: 24px;
+    outline: none;
+  }
+  #requestptp {
+    padding: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: beige;
+    border-radius: 10px;
+  }
+  
+  .hrline {
+    border: 0.3px solid gray;
+    position: relative;
+    margin-top: 80px;
+    width: 95%;
+    margin-left: 10px;
+  }
+  
+  #otpsection {
+    margin-left: 30px;
+  }
+  .enterotp {
+    width: 30px;
+    height: 30px;
+  }
+  #verify {
+    color: #fff;
+    width: 180px;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    background-color: #f04081;
+    cursor: pointer;
+  }
+  #ragister {
+    color: #fff;
+    width: 180px;
+    margin-left: 3px;
+    margin-top: 20px;
+    font-size: 14px;
+    border: none;
+    padding: 10px;
+    background-color: #f04081;
+    cursor: pointer;
+  }
+  #ragister > a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  
+  .whats {
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 10px;
+  }
+  #logcontent {
+    margin: 0%;
+  }
+  .logp {
+    margin: auto;
+    width: -36px;
+    font-size: 15px;
+    padding: 25px;
+    font-weight: 600;
+  }
+  .logp p {
+    margin-bottom: 2px !important;
+  }
+  #smll {
+    display: flex;
+    justify-content: center;
+  }
