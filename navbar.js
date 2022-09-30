@@ -13,7 +13,17 @@ const cancel = () => {
         hamicon.style.display = 'none';
     };
 };
-
+const backToHomePage = () => {
+    window.location.href = './index.html'
+}
+function showdropdown() {
+    let dropdown = document.getElementById('dropdown');
+    if(dropdown.style.display == 'block'){
+        dropdown.style.display = 'none';
+    } else{
+        dropdown.style.display = "block";
+    }
+}
 const fetchAPI = async() => {
     let query = document.getElementById('query').value;
 

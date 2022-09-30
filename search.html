@@ -7,23 +7,32 @@
     <title>Searched Items</title>
     <link rel="stylesheet" href="./Styles/search.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./Styles/footer.css">
 </head>
 <body>
     <div id="navbar"></div>
     <div id="body">
         <div id="relevence">
             <div>
-                <h3>Sort By:</h3>
-                <p>Relevence<i class="fa fa-caret-down"></i></p>
-                
-            </div>
-            <div id="options">
-                <p onclick="lowtohigh()">Price: Low To High</p>
-                <p onclick="hightolow()">Price: High To Low</p>
+                <div id="sort">
+                    <h3>Sort By:</h3>
+                    <p onclick="display()">Relevence <i class="fa fa-caret-down"></i></p>
+                </div>
+                <div id="options">
+                    <p onclick="relevence()">Relevence</p>
+                    <p onclick="lowtohigh()">Price: Low To High</p>
+                    <p onclick="hightolow()">Price: High To Low</p>
+                </div>
             </div>
         </div>
         <div id="container"></div>
     </div>
+    <!-- footer -->
+    <div id="footer"></div>
 </body>
 </html>
+<script src="./Scripts/header.js" type="module"></script>
+<script src="./navbar.js"></script>
+<script src="./Scripts/bottom.js" type="module"></script>
 <script src="./Scripts/search.js"></script>

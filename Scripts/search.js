@@ -1,9 +1,5 @@
-function lsData(){
-    let data = JSON.parse(localStorage.getItem('products'));
-    // console.log(data);
-    appenData(data);
-}
-lsData();
+  let data = JSON.parse(localStorage.getItem('products'));
+  appenData(data);
 
 function appenData(data){
     let container = document.getElementById('container');
@@ -30,10 +26,29 @@ function appenData(data){
 
 };
 
-
-
-let arr = JSON.parse(localStorage.getItem('selected')) || [];
-const selectProduct = ({image_link, descrition, price}) => {
-    arr.push({image_link, descrition, price});
-    localStorage.setItem('selected', JSON.stringify(arr));
+const display = () => {
+    let option = document.querySelector('#options');
+    if(option.style.display == 'block'){
+        option.style.display = 'none';
+    } else{
+        option.style.display = "block";
+    };
 }
+
+const relevence = () => {
+    appenData(data);
+};
+
+const lowtohigh = () => {
+    data = data.sort((a, b) => {
+        return a.price - b.price;
+      });
+      appenData(data);
+}
+
+const hightolow = () => {
+    data = data.sort((a, b) => {
+      return b.rating - a.rating;
+    });
+    appenData(data);
+  }
