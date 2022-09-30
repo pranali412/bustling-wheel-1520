@@ -163,7 +163,7 @@ function append(data){
     const btn=document.createElement("button")
     btn.innerHTML="Add To Cart";
     btn.addEventListener("click",()=>{
-        addtocart();
+        addtocart(el); 
     })
 
 
