@@ -1,3 +1,7 @@
+*{
+    font-family: 'poppins',sans-serif;
+}
+
 #main_img_box{
     position: relative;
 }
@@ -50,7 +54,7 @@
 
 }
 #filter{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     background-color: white;
     border-radius: 20px;
     padding-top: 5px;
@@ -74,6 +78,7 @@
     margin-top: 10px;
     padding-bottom: 10px;
     padding-top: 10px;
+    height:400px;
 }
 #data_id>div>img{
     /* border:1px solid red; */
@@ -144,8 +149,29 @@
 }
 /* ------------------------------- */
 #filter>div{
-     border: 1px solid gray;
+     border: 1px solid lightgray;
      margin-top: 20px;
      padding: 10px;
      margin-bottom: 10px;
 }
+
+.data_box{
+    /* border:1px solid black; */
+    width:250px
+}
+#filter_details{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#reset{
+    color:magenta;
+}
+
+#filter .sort-btn .dropdown1{
+    /* position: absolute; */
+    right: 0;
+    transition: 0.3s ease;
+    margin-left: 60px;
+ }
+

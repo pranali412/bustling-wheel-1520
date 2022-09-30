@@ -5,14 +5,6 @@ window.addEventListener('load', () =>{
 
     //jquery for toggle sub_menu
     $(document).ready(function(){
-        $('.read1').click(function(){
-            // console.log("hello")
-            $(this).next('.sort_menu').slideToggle();
-            $(this).find('.dropdown1').toggleClass('rotate');
-        });
-    })
-
-    $(document).ready(function(){
         $('.sort-btn').click(function(){
             // console.log("hello")
             $(this).next('.sort_menu').slideToggle();
@@ -55,15 +47,29 @@ window.addEventListener('load', () =>{
 
             let rate = document.createElement('p')
             rate.innerText=`★ ${rating}`;
-
            
             let order = document.createElement('button')
-            order.innerText="ADD TO CART";
+            order.innerText="ADD TO CART"
+            order.addEventListener('click', () => {
+                cartData()
+                // console.log("cart function")
+            })
 
             div.append(image,name,pr,rate,order);
             data_id.append(div);
          });
     }
+
+   let cartData = () =>{
+        let info = JSON.parse(localStorage.getItem('CartList')) || []
+
+        info.push(data_id)
+        console.log("data_id:",data_id)
+
+         localStorage.setItem('CartList',JSON.stringify(info))
+   }
+
+
 
     //sorting
     let sortHL = document.getElementById('sortHL')
@@ -114,3 +120,188 @@ window.addEventListener('load', () =>{
          console.log(data)
          display_data(data)
        }
+
+       //Filter
+       //Product Type
+
+       let Product_1 = document.getElementById('Product_1')
+       Product_1.addEventListener('click', function (){
+          Product_detail_1();
+       })
+
+       let Product_detail_1 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_category=Powder')
+         let data = await res.json()
+        //  console.log(data)
+        display_data(data)
+       }
+
+       let Product_2 = document.getElementById('Product_2')
+       Product_2.addEventListener('click', function (){
+          Product_detail_2();
+       })
+
+       let Product_detail_2 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_category=Cream')
+         let data = await res.json()
+        //  console.log(data)
+        display_data(data)
+       }
+
+       let Product_3 = document.getElementById('Product_3')
+       Product_3.addEventListener('click', function (){
+          Product_detail_3();
+       })
+
+       let Product_detail_3 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Eyeliner&product_category=Pencil')
+         let data = await res.json()
+        //  console.log(data)
+        display_data(data)
+       }
+
+       let Product_4 = document.getElementById('Product_4')
+       Product_4.addEventListener('click', function (){
+          Product_detail_4();
+       })
+
+       let Product_detail_4 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Eyeliner&product_category=Liquid')
+         let data = await res.json()
+        //  console.log(data)
+        display_data(data)
+       }
+
+       let Product_5 = document.getElementById('Product_5')
+       Product_5.addEventListener('click', function (){
+          Product_detail_5();
+       })
+
+       let Product_detail_5 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Nail_polish')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+
+//Features
+let Feature_1 = document.getElementById('Feature_1')
+    Feature_1.addEventListener('click', function (){
+        Feature_detail_1();
+       })
+
+       let Feature_detail_1 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Blush&product_tags=Vegan')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+
+       let Feature_2 = document.getElementById('Feature_2')
+    Feature_2.addEventListener('click', function (){
+        Feature_detail_2();
+       })
+
+       let Feature_detail_2 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Blush&product_tags=Gluten free')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+
+       let Feature_3 = document.getElementById('Feature_3')
+    Feature_3.addEventListener('click', function (){
+        Feature_detail_3();
+       })
+
+       let Feature_detail_3 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Eyeliner&product_tags=Canadian')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+
+ //Finish
+
+ let Finish_1 = document.getElementById('Finish_1')
+ Finish_1.addEventListener('click', function (){
+        Finish_detail_1();
+       })
+
+       let Finish_detail_1 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Natural')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+
+       
+ let Finish_2 = document.getElementById('Finish_2')
+ Finish_2.addEventListener('click', function (){
+        Finish_detail_2();
+       })
+
+       let Finish_detail_2 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Peanut free product')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+
+  //Formation
+  let Formation_1 = document.getElementById('Formation_1')
+  Formation_1.addEventListener('click', function (){
+    Formation_detail_1();
+       })
+
+       let Formation_detail_1 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Canadian')
+         let data = await res.json()
+         console.log(data)
+        display_data(data)
+       }
+       
+       let Formation_2 = document.getElementById('Formation_2')
+       Formation_2.addEventListener('click', function (){
+         Formation_detail_2();
+            })
+     
+            let Formation_detail_2 = async () => {
+             let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Natural')
+              let data = await res.json()
+              console.log(data)
+             display_data(data)
+            }
+
+            let Formation_3 = document.getElementById('Formation_3')
+       Formation_3.addEventListener('click', function (){
+         Formation_detail_3();
+            })
+     
+            let Formation_detail_3 = async () => {
+             let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Organic')
+              let data = await res.json()
+              console.log(data)
+             display_data(data)
+            }
+
+            //RESET
+            let reset = document.getElementById('reset')
+            reset.addEventListener('click' , () => {
+                reset_fun()
+            })
+
+            let reset_fun = async () => {
+                try{
+                    let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick')
+        
+                   let data = await res.json()
+                      console.log("data:",data)
+            
+                      display_data(data)
+        
+                }
+                catch(err){
+                    console.log("err:",err)
+                }
+            }
