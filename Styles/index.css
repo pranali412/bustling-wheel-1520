@@ -97,6 +97,8 @@ h2 {
 #lastbox {
     margin: auto;
     margin-left: 400px;
+    line-height: 50px;
+
 }
 
 #lastbox button {
@@ -111,12 +113,14 @@ h2 {
 #lastbox input {
     height: 30px;
 
+
+
 }
 
-input {
-
+#lastbox input {
+margin-top:30px;
     width: 500px;
-    height: 30px
+    height: 30px;
 }
 
 .sixteenth_box_div1 {
@@ -304,3 +308,41 @@ input {
     text-align: center;
 }
 
+
+#bottom2-heding{
+    /* border: 1px solid; */
+    padding: 18px;
+    background-color: #fff;
+    padding-left: 50px;
+    margin-top: 40px;
+    cursor: pointer;
+}
+
+#bottom2{
+    margin-top: 30px;
+    border: px solid;
+    text-align: center;
+    line-height: 30px;
+}
+
+#email2{
+    width: 40%;
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    outline: none;
+    border: 1px solid;
+}
+
+#bottom2>button{
+    width: 8%;
+    font-size: 16px;
+    padding: 9px;
+    margin-left: -5px;
+    color: #fff;
+    background-color: black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius:10px ;
+    cursor: pointer;
+}
