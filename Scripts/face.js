@@ -55,3 +55,53 @@ window.addEventListener('load', () =>{
             data_id.append(div);
          });
     }
+
+     //sorting
+     let sortHL = document.getElementById('sortHL')
+     sortHL.addEventListener('click', function (){
+         sort1()
+         console.log("hi")
+     })
+ 
+ 
+     //High to low
+     let sort1 = async () => {
+          let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=foundation')
+          
+          let new_data = await res.json()
+          let actual_data = new_data.sort( function (a,b){
+             return b.price-a.price;
+          })
+          display_data(actual_data);
+         }
+         
+         let sortLH = document.getElementById('sortLH')
+         sortLH.addEventListener('click', function (){
+             sort2()
+             console.log("hello")
+         })
+     //Low to High
+     let sort2 = async () => {
+         let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=foundation')
+         
+         let new_data1 = await res.json()
+         let actual_data1 = new_data1.sort( function (a,b){
+            return a.price-b.price;
+         })
+         display_data(actual_data1);
+        }
+
+      //Relevence
+    let relevence = document.getElementById('relevence')
+    relevence.addEventListener('click',function (){
+        sort3();
+        console.log("hellllooooo")
+    })   
+
+    //sort for relevence(basically showing the same data that was there at the time of page load)
+    let sort3 = async () => {
+         let res = await fetch ('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=foundation')
+          let data = await res.json()
+          console.log(data)
+          display_data(data)
+        }

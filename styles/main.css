@@ -112,12 +112,7 @@
      font-weight: 500;
  
  }
- #sort>div>div{
-    margin-bottom: 10px;
-    margin-top: 10px;
-    /* padding-top: 10px; */
-    /* border: 1px solid black; */
- }
+ 
 
  /* ---------------------------- */
  #bottom_id{
@@ -146,4 +141,11 @@
     background-color: black;
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px ;
+}
+/* ------------------------------- */
+#filter>div{
+     border: 1px solid gray;
+     margin-top: 20px;
+     padding: 10px;
+     margin-bottom: 10px;
 }

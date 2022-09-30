@@ -29,7 +29,7 @@ window.addEventListener('load', () =>{
 
            let data = await res.json()
               console.log("data:",data)
-
+    
               display_data(data)
 
         }
@@ -37,7 +37,7 @@ window.addEventListener('load', () =>{
             console.log("err:",err)
         }
     }
-  showData()
+
     let display_data = (data) => {
          data_id.innerHTML=null;
 
@@ -74,9 +74,43 @@ window.addEventListener('load', () =>{
 
 
     //High to low
-    let sort1 = () => {
-        data= data.sort( function (a,b){
-            return b.price-a.price
+    let sort1 = async () => {
+         let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick')
+         
+         let new_data = await res.json()
+         let actual_data = new_data.sort( function (a,b){
+            return b.price-a.price;
          })
-    }
-    display_data(data)
+         display_data(actual_data);
+        }
+        
+        let sortLH = document.getElementById('sortLH')
+        sortLH.addEventListener('click', function (){
+            sort2()
+            console.log("hello")
+        })
+    //Low to High
+    let sort2 = async () => {
+        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick')
+        
+        let new_data1 = await res.json()
+        let actual_data1 = new_data1.sort( function (a,b){
+           return a.price-b.price;
+        })
+        display_data(actual_data1);
+       }
+
+        //Relevence
+    let relevence = document.getElementById('relevence')
+    relevence.addEventListener('click',function (){
+        sort3();
+        console.log("hellllooooo")
+    })
+
+         //sort for relevence(basically showing the same data that was there at the time of page load)
+    let sort3 = async () => {
+        let res = await fetch ('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick')
+         let data = await res.json()
+         console.log(data)
+         display_data(data)
+       }
