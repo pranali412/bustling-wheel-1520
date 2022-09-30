@@ -56,6 +56,7 @@
     padding: 18px;
     border-radius: 10px;
     position: relative;
+    margin-top: 0;
     background-color:#fff ;
 }
 
@@ -71,7 +72,6 @@ p{
 span{
     font-size: 16px;
     font-weight: 500;
-
 }
 
 .item h3 .dropdown{
@@ -123,15 +123,13 @@ h4{
     overflow: hidden;
 }
 
-#p-div>button{
+.star-main-div>button{
     align-items: center;
     padding: 8px 30px;
     color: #fff;
     background-color: black;
     border-radius: 10px;
     position :relative;
-    top : 0rem;
-    bottom: 0rem;
     font-size: 16px;
     cursor: pointer;
 }
@@ -152,7 +150,7 @@ h4{
     line-height: 30px;
 }
 
-input{
+#email{
     width: 40%;
     font-size: 16px;
     padding: 10px;
@@ -172,10 +170,24 @@ input{
     border-top-right-radius: 10px;
     border-bottom-right-radius:10px ;
     cursor: pointer;
+}
+
+.star-main-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.star-div{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
 
 }
 
-
+.star-div>i{
+    width: 100%;
+}
 
 
 
