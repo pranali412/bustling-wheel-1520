@@ -61,7 +61,39 @@
 
 .item i{
     margin-right: 15px;
+    color: rgb(99, 100, 101);
 }
+
+.sub-btn{
+    margin-top: 15px;
+    margin-bottom: -0px;
+}
+
+.sub-btn i{
+    margin-right: 15px;
+    color: rgb(99, 100, 101);
+}
+
+.side_bar_bottom{
+    width: auto;
+    height: auto;
+    padding: 18px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 15px;
+    background-color:#fff ; 
+}
+
+.side_bar_bottom h4 .dropdown{
+    position: absolute;
+    right: 0;
+    transition: 0.4s ease;
+ }
+
+ #side_bar .side_bar_bottom .sub_menu{
+    display: none;
+ }
 
 p{
     margin-top: 10px;
@@ -193,3 +225,8 @@ h4{
     width: 100%;
 } 
 
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid  rgb(235, 237, 238);
+}
