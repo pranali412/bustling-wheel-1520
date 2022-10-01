@@ -99,7 +99,7 @@
     /* position: absolute; */
     right: 0;
     transition: 0.3s ease;
-    margin-left: 60px;
+    margin-left: 40px;
  }
 
  .rotate{
@@ -174,4 +174,9 @@
     transition: 0.3s ease;
     margin-left: 60px;
  }
+#filter .sort-btn .sort_menu{
+    margin-top: 30px;
+    /* border:1px solid red; */
+    display: none;
 
+}
