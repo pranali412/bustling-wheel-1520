@@ -5,7 +5,7 @@ function appenData(data){
     let container = document.getElementById('container');
     container.innerHTML = null;
 
-    data.forEach(({image_link, description, price}) => {
+    data.forEach(({image_link, price}) => {
         let div = document.createElement('div');
         div.setAttribute('class', 'child');
 
@@ -18,13 +18,19 @@ function appenData(data){
         let btn = document.createElement('button');
         btn.innerHTML = 'Add To Cart';
         btn.addEventListener('click', function(){
-            selectProduct({image_link, descrition, price});
+            selectProduct({image_link, price});
         });
         div.append(img, desc, prc, btn);
         container.append(div);
     })
 
 };
+
+arr = JSON.parse(localStorage.getItem('CartList')) || [];
+function selectProduct({image_link, price}){
+    arr.push({image_link, price});
+    localStorage.setItem('CartList', JSON.stringify(arr));
+}
 
 const display = () => {
     let option = document.querySelector('#options');
