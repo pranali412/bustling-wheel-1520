@@ -1,6 +1,5 @@
 
 
-
 arr = JSON.parse(localStorage.getItem('CartList')) || [];
 let container = document.getElementById('display');
 container.innerHTML = null;
@@ -33,12 +32,5 @@ function remove(i){
         window.location.href = './cart.html';
         appenData();
 }
-
-
-
-
-
-
-
 
 

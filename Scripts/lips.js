@@ -46,29 +46,34 @@ window.addEventListener('load', () =>{
             pr.innerText=`₹ ${price}`;
 
             let rate = document.createElement('p')
-            rate.innerText=`★ ${rating}`;
+            if(rating == null){
+                rate.innerText=`★ 0.0`;
+            }
+            else {
+                rate.innerText=`★ ${rating}`;
+            }
+           
            
             let order = document.createElement('button')
             order.innerText="ADD TO CART"
             order.addEventListener('click', () => {
-                cartData()
-                // console.log("cart function")
+                cartData({image_link, name, price, rating })
+                // console.log("cart_function")
             })
 
             div.append(image,name,pr,rate,order);
             data_id.append(div);
          });
     }
-
-   let cartData = () =>{
-        let info = JSON.parse(localStorage.getItem('CartList')) || []
-
-        info.push(data_id)
-        console.log("data_id:",data_id)
+    let info = JSON.parse(localStorage.getItem('CartList')) || []
+   let cartData = ({image_link, name, price, rating }) =>{
+        info.push({image_link, name, price, rating })
+        console.log("data:",{image_link, name, price, rating })
 
          localStorage.setItem('CartList',JSON.stringify(info))
    }
-
+   
+   
 
 
     //sorting
