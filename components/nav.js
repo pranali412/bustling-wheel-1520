@@ -17,15 +17,15 @@ const navbar = () => {
                 <div id="search-mobile">
                     <i class="fa fa-search" id="search-icon"></i>
                 </div>
-                <a href="#login/register"><i class="fa fa-user"></i><span class="login"> Login/Register</span></a>
+                <a href="./loginPage.html"><i class="fa fa-user"></i><span class="login"> Login/Register</span></a>
             </div>
 
             <!-- child 3 -->
             <div id="cart">
                 <a href=""><i class="fa fa-search"></i></a>
-                <a href="#login/register"><i class="fa fa-user"></i></a>
+                <a href="./loginPage.html"><i class="fa fa-user"></i></a>
                 <a href="#whislist"><i class="fa-regular fa-heart"></i></a>
-                <a href="#Cart"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 <a href="#offer"><i class="fa-solid fa-bullhorn"></i></a>
             </div>
         </div>
@@ -35,6 +35,7 @@ const navbar = () => {
                 <p><a href="./lips.html">Lips</a></p>
                 <p><a href="./face.html">Face</a></p>
                 <p><a href="./eyes.html">Eyes</a></p>
+                <p><a href="./makeup_page.html">Mixed Products</a></p>
             </div>
             <li><a href="./brushes_page.html">BRUSHES</a></li>
             <li><a href="#SKINCARE">SKINCARE</a></li>
@@ -52,7 +53,7 @@ const navbar = () => {
         </div>
         <img src="https://i.ibb.co/9hnDfPS/logo.png" alt="logo">
         <ul id="ham-list">
-            <li><a href="#MAKEUP">MAKEUP</a></li>
+            <li><a href="./makeup_page.html">MAKEUP</a></li>
             <li><a href="./brushes_page.html">BRUSHES</a></li>
             <li><a href="#SKINCARE">SKINCARE</a></li>
             <li><a href="#GIFTING">GIFTINGS</a></li>
