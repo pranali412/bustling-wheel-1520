@@ -149,7 +149,7 @@ function append(data){
     Name.innerText=el.name;
     
     const Price=document.createElement("h4");
-    Price.innerText=" ₹ "+el.price;
+    Price.innerText=" ₹ "+ el.price;
 
     const Rating=document.createElement("h4");
     Rating.style.color="#757575";

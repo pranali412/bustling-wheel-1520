@@ -64,15 +64,52 @@
     margin-right: 15px;
 }
 
+span{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.sub-btn{
+    margin-top: 15px;
+    margin-bottom: -0px;
+}
+
+hr{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0.5px solid  rgb(235, 237, 238);
+}
+
+.sub-btn i{
+    margin-right: 15px;
+    color: rgb(99, 100, 101);
+}
+
 p{
     margin-top: 10px;
     font-size: 16px;
 }
 
-span{
-    font-size: 16px;
-    font-weight: 500;
+.side_bar_bottom{
+    width: auto;
+    height: auto;
+    padding: 18px;
+    padding-bottom: 40px;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 15px;
+    background-color:#fff ; 
 }
+
+.side_bar_bottom h4 .dropdown{
+    position: absolute;
+    right: 0;
+    transition: 0.4s ease;
+ }
+
+ #side_bar .side_bar_bottom .sub_menu{
+    display: none;
+ }
 
 .item h3 .dropdown{
     position: absolute;
@@ -93,7 +130,7 @@ span{
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4,24%);
-    grid-template-rows: auto;
+    grid-template-rows: 450px;
     justify-content: space-between;
     gap: 15px;
 }
@@ -123,13 +160,23 @@ h4{
     overflow: hidden;
 }
 
+.div-button{
+    margin-bottom: 15px;
+}
+
+.star-main-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 .star-main-div>button{
     align-items: center;
     padding: 8px 30px;
     color: #fff;
     background-color: black;
     border-radius: 10px;
-    position :relative;
+    /* position :relative; */
     font-size: 16px;
     cursor: pointer;
 }
@@ -144,7 +191,7 @@ h4{
 }
 
 #bottom{
-    margin-top: 30px;
+    margin-top: 50px;
     border: px solid;
     text-align: center;
     line-height: 30px;
@@ -172,17 +219,11 @@ h4{
     cursor: pointer;
 }
 
-.star-main-div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .star-div{
     border: 1px solid black;
     padding: 10px;
     border-radius: 10px;
-
+    margin-bottom: 15px
 }
 
 .star-div>i{
