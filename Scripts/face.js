@@ -3,13 +3,7 @@ window.addEventListener('load', () =>{
  })
 
  //jquery for toggle sub_menu
- $(document).ready(function(){
-    $('.filter_btn').click(function(){
-        // console.log("hello")
-        $(this).next('.data_box').slideToggle();
-        $(this).find('.dropdown2').toggleClass('rotate');
-    });
-})
+
 
     //jquery for toggle sub_menu
     $(document).ready(function(){
@@ -57,12 +51,25 @@ window.addEventListener('load', () =>{
             rate.innerText=`★ ${rating}`;
 
            
+          
             let order = document.createElement('button')
-            order.innerText="ADD TO CART";
+            order.innerText="ADD TO CART"
+            order.addEventListener('click', () => {
+                cartData({image_link, name, price, rating })
+                // console.log("cart_function")
+            })
 
             div.append(image,name,pr,rate,order);
             data_id.append(div);
          });
+    }
+
+    let info = JSON.parse(localStorage.getItem('CartList')) || []
+    let cartData = ({image_link, name, price, rating }) =>{
+         info.push({image_link, name, price, rating })
+         console.log("data:",{image_link, name, price, rating })
+ 
+          localStorage.setItem('CartList',JSON.stringify(info))
     }
 
      //sorting
