@@ -7,19 +7,23 @@ container.innerHTML = null;
 let totalPrice=0;
 let subTotal = 0;
 
+
+
 appenData(arr);
 function appenData(arr){
     arr.forEach((el, i)=>{
 
         let cartOrder_cartData = document.querySelector('.cartOrder_cartData');
         cartOrder_cartData.innerHTML = null;
-        let subTotal = document.querySelector("#totalPrice");
-        for(var i=0; i<arr.length; i++){
-            subTotal+=arr[i] * arr[i].price;
-            console.log(arr[i] * arr[i].price);
+        let Total = document.querySelector("#totalPrice");
+        Total.innerHTML= null;
+        let initPrice = 0
+        for (let i = 0; i < arr.length; i++) {
+            let obj = arr[i];
+            initPrice+=Number(obj.price);
+            Total.innerHTML =  initPrice;
         }
-        
-        subTotal = el * el.price;
+        console.log(initPrice);
 
         
         let div = document.createElement('div');
@@ -54,3 +58,6 @@ function remove(i){
 }
 
 
+function showdata(){
+    window.location.href="./Order.html";
+}

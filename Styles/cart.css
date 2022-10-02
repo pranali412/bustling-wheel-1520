@@ -93,8 +93,12 @@
 .cartOrder{
     width: 50%;
     margin-top: 20px;
+    margin-left: 30px;
 }
-
+.cartOrder_header h2{
+    display: flex;
+    margin-right: -19px;
+}
 
 
 .child{
@@ -106,6 +110,7 @@
    margin: 10px;
    height: 50%;
 }
+
 .child img{
     object-fit: cover;
     width: 70px;
@@ -125,4 +130,40 @@
 .btn{
     height: 30%;
     margin: auto;
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 30px;
+    width: 20%;
+}
+.cartPriceOffer_header{
+    margin-left: 100%;
+}
+
+.child1{
+    width: 40%;
+    overflow: hidden;
+    /* border: 1px solid black; */
+    display: block;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   margin: auto;
+   height: 50%;
+}
+#details{
+    margin: auto;
+    width: 30%;
+    height: 50%
+}
+
+#hw1{
+    background-color: #000;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    height: 35px;
+    width: 30%;
+    margin-left: 40%;
+    margin-top: 0%;
+    padding: 10px;
 }
