@@ -4,7 +4,7 @@ function succeful (){
        if("userfirstname.length>5"){ 
     
          alert("  congratulation Account Created successful")
-         window.location.href="../index.html";
+         window.location.href="./index.html";
        }
      }
     
