@@ -6,13 +6,16 @@
 }
 
 #complete-navbar{
-position:fixed;
-top:0;
-z-index:1;
+width:100%;
+margin-bottom:150px;
 }
 #laptop-nav{
     width: 100vw;
     background: black;
+    position:fixed;
+top:0;
+z-index:1;
+
    
 }
 #nav-lap{
@@ -20,6 +23,7 @@ z-index:1;
     align-items: center;
     justify-content: space-between;
     /* border: 1px solid red; */
+    margin-right: 15px;
 }
 #nav-lap>img{
     width: 15%;
