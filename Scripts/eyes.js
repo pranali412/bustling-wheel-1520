@@ -19,7 +19,7 @@ window.addEventListener('load', () =>{
     //show data on page 
     let showData = async () =>{
         try{
-            let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
+            let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
 
               let data = await res.json()
               console.log("data:",data)
@@ -80,7 +80,7 @@ window.addEventListener('load', () =>{
 
     //High to low
     let sort1 = async () => {
-         let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
+         let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
          
          let new_data = await res.json()
          let actual_data = new_data.sort( function (a,b){
@@ -96,7 +96,7 @@ window.addEventListener('load', () =>{
         })
     //Low to High
     let sort2 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
         
         let new_data1 = await res.json()
         let actual_data1 = new_data1.sort( function (a,b){
@@ -114,7 +114,7 @@ window.addEventListener('load', () =>{
 
    //sort for relevence(basically showing the same data that was there at the time of page load)
    let sort3 = async () => {
-        let res = await fetch ('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
+        let res = await fetch ('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=eyeliner')
          let data = await res.json()
          console.log(data)
          display_data(data)
@@ -130,7 +130,7 @@ window.addEventListener('load', () =>{
        })
 
        let Product_detail_1 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_category=Powder')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_category=Powder')
          let data = await res.json()
         //  console.log(data)
         display_data(data)
@@ -142,7 +142,7 @@ window.addEventListener('load', () =>{
        })
 
        let Product_detail_2 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_category=Cream')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_category=Cream')
          let data = await res.json()
         //  console.log(data)
         display_data(data)
@@ -154,7 +154,7 @@ window.addEventListener('load', () =>{
        })
 
        let Product_detail_3 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Eyeliner&product_category=Pencil')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Eyeliner&product_category=Pencil')
          let data = await res.json()
         //  console.log(data)
         display_data(data)
@@ -166,7 +166,7 @@ window.addEventListener('load', () =>{
        })
 
        let Product_detail_4 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Eyeliner&product_category=Liquid')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Eyeliner&product_category=Liquid')
          let data = await res.json()
         //  console.log(data)
         display_data(data)
@@ -178,7 +178,7 @@ window.addEventListener('load', () =>{
        })
 
        let Product_detail_5 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Nail_polish')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=Nail_polish')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -191,7 +191,7 @@ let Feature_1 = document.getElementById('Feature_1')
        })
 
        let Feature_detail_1 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Blush&product_tags=Vegan')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Blush&product_tags=Vegan')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -203,7 +203,7 @@ let Feature_1 = document.getElementById('Feature_1')
        })
 
        let Feature_detail_2 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Blush&product_tags=Gluten free')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Blush&product_tags=Gluten free')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -215,7 +215,7 @@ let Feature_1 = document.getElementById('Feature_1')
        })
 
        let Feature_detail_3 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Eyeliner&product_tags=Canadian')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Eyeliner&product_tags=Canadian')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -229,7 +229,7 @@ let Feature_1 = document.getElementById('Feature_1')
        })
 
        let Finish_detail_1 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Natural')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Natural')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -242,7 +242,7 @@ let Feature_1 = document.getElementById('Feature_1')
        })
 
        let Finish_detail_2 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Peanut free product')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Peanut free product')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -255,7 +255,7 @@ let Feature_1 = document.getElementById('Feature_1')
        })
 
        let Formation_detail_1 = async () => {
-        let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Canadian')
+        let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Canadian')
          let data = await res.json()
          console.log(data)
         display_data(data)
@@ -267,7 +267,7 @@ let Feature_1 = document.getElementById('Feature_1')
             })
      
             let Formation_detail_2 = async () => {
-             let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Natural')
+             let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Natural')
               let data = await res.json()
               console.log(data)
              display_data(data)
@@ -279,7 +279,7 @@ let Feature_1 = document.getElementById('Feature_1')
             })
      
             let Formation_detail_3 = async () => {
-             let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Organic')
+             let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?product_type=Lipstick&product_tags=Organic')
               let data = await res.json()
               console.log(data)
              display_data(data)
@@ -293,7 +293,7 @@ let Feature_1 = document.getElementById('Feature_1')
 
             let reset_fun = async () => {
                 try{
-                    let res = await fetch('http://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick')
+                    let res = await fetch('https://makeup-api.herokuapp.com/api/v1/products.json?brand=maybelline&product_type=lipstick')
         
                    let data = await res.json()
                       console.log("data:",data)

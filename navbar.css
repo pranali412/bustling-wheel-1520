@@ -4,9 +4,16 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
+
+#complete-navbar{
+position:fixed;
+top:0;
+z-index:1;
+}
 #laptop-nav{
     width: 100vw;
     background: black;
+   
 }
 #nav-lap{
     display: flex;
@@ -52,6 +59,7 @@
     display: flex;
     justify-content: space-evenly;
     font-size: 17px;
+    margin-right: 10px;
 }
 #cart a{
     text-decoration: none;
