@@ -43,6 +43,7 @@
 #categories{
     width:30%;
     margin-top: 10px;
+    margin-left: 20px;
 }
 #sort{
     /* border:1px solid black; */
@@ -174,9 +175,13 @@
     transition: 0.3s ease;
     margin-left: 60px;
  }
-#filter .sort-btn .sort_menu{
+#filter .sort_menu{
     margin-top: 30px;
     /* border:1px solid red; */
     display: none;
+    width:200px
 
+}
+#filter h3{
+    margin-left: 10px;
 }
