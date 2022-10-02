@@ -1,0 +1,116 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order</title>
+    <style>
+        #master{
+            width: 90%;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            /* border: 1px solid red; */
+        }
+        #b1 h1{
+            text-align: center;
+            align-items: center;
+        }
+        #b2 h1{
+            text-align: center;
+            align-items: center;
+            margin: 0%;
+        }
+        #b2{
+            margin: 5%;
+        }
+        #b2 input{
+            display: flex;
+            width: 100%;
+            margin-top: 10%;
+            margin-bottom: 10%;
+            padding: 10px;
+        }
+        #payment{
+            width: 25%;
+            /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+            margin: auto;
+            height: auto;
+        }
+        #checkout{
+            /* height: 30%; */
+            margin-left: 25%;
+            background-color: rgb(198, 198, 198);
+            border-radius: 5px;
+            color: rgb(4, 5, 4);
+            cursor: pointer;
+            height: 30px;
+            width: 50%;
+            margin-bottom: 10%;
+            
+        }
+        #imgSucss{
+            align-items: center;
+            position: absolute;
+           
+        }
+    </style>
+</head>
+<body>
+    <div id="master">
+        <div id="main">
+          <div id="b1">
+            <img id="ss-img" alt="" />
+            <h1>Congratulations!</h1>
+            <h1>You are now a Member</h1>
+            <h1>Amount to be paid</h1>
+        </div>
+          <div id="b2">
+            <div>
+              <form action="" id="payment">
+                <input
+                  type="text"
+                  id="card_number"
+                  placeholder="Card Number"
+                  minlength="16"
+                  maxlength="16"
+                />
+                <input type="date" id="expiry" placeholder="expiry" />
+                <input type="text" id="holder" placeholder="Card Holder" />
+                <input
+                  type="text"
+                  maxlength="3"
+                  minlength="3"
+                  placeholder="CVV"
+                />
+                <button type="submit" id="checkout">Checkout</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+</div>
+</body>
+</html>
+<script>
+    let img = document.createElement("img");
+    let user = JSON.parse(localStorage.getItem("user"));
+  img.src = "";
+  let success_img = document.getElementById("ss-img");
+  success_img.setAttribute('id','imgSucss')
+  let submit = document.getElementById("checkout");
+  let main = document.getElementById("main");
+ 
+  let payment = document.getElementById("payment");
+
+  localStorage.setItem("loggedin", JSON.stringify(user));
+  submit.addEventListener("click", (event) => {
+    event.preventDefault();
+    success_img.src =
+      "https://cdn.dribbble.com/users/159981/screenshots/2112264/media/40b1edcc8d8e168d6e32f3976318747f.gif";
+    main.classList.add("box");
+    setTimeout(() => {
+      window.location.href = "./index.html";
+    }, 4000);
+  });
+</script>
